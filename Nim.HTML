@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        background-color: black;
+        height: 500px;
+        width: 500px;
+
+       display:inline-block;
+    }
+    .active {
+  background-color: red;
+}
+table{
+    background-color:white;
+    
+}
+    </style>
+</head>
+<body>
+<div class ="container">
+<form>
+<input type ="radio" value = 1 id="One">
+<input type ="radio" value = 2 id="Two">
+<input type ="radio" value = 3 id="Three">
+
+
+</form>
+<hr>
+<table>
+        <colgroup>
+          <col class="player active" id="player1">
+          <col class="player" id="player2">
+        </colgroup>
+        <tr>
+          <th>player1</th>
+          <th>Player2</th>
+        </tr>
+
+</table>
+<input type="number" id="player_turn" value="1"><br>
+<button type="button" id="btnChangePlayer">Byt spelare</button>
+
+</div>
+</body>
+
+<script src="Nim.JS"></script>
+</html>
