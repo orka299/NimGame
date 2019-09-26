@@ -7,29 +7,41 @@
     <title>Document</title>
     <style>
     .container{
-        background-color: black;
+        background-color: blue;
         height: 500px;
         width: 500px;
+        ;
 
        display:inline-block;
     }
     .active {
-  background-color: red;
+  background-color: yellow;
 }
 table{
     background-color:white;
     
 }
+
+.raidobtn{
+  margin: 15px;
+  display: block;
+ background-color:white;
+
+}
+
+.textbtn{
+  margin:30px;
+  height:50px 
+  width:50px
+}
     </style>
 </head>
 <body>
 <div class ="container">
-<form>
-<input type ="radio" value = 1 id="One">
-<input type ="radio" value = 2 id="Two">
-<input type ="radio" value = 3 id="Three">
-
-
+<form class="raidobtn">
+<input type ="radio" name="lik" value = 1 id="One" checked="">1
+<input type ="radio" name="lik" value  = 2 id="Two" checked="">2
+<input type ="radio" name="lik" value = 3 id="Three"checked="">3
 </form>
 <hr>
 <table>
@@ -43,10 +55,15 @@ table{
         </tr>
 
 </table>
-<input type="number" id="player_turn" value="1"><br>
-<button type="button" id="btnChangePlayer">Byt spelare</button>
+
+<div class="textbtn">
+<input type="text" id ="score"><br>
 
 </div>
+<button type="button" id="btnChangePlayer">Dra!!</button>
+
+</div>
+<input type="number" id="player_turn" value="1">
 </body>
 
 <script src="Nim.JS"></script>
