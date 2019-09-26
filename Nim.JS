@@ -12,15 +12,15 @@ document.getElementById("btnChangePlayer").addEventListener("click", function(e)
 
   document.getElementById("player_turn").value = index;
   document.getElementById("player" + index).classList.add("active");
+
 });
 
 
 
-var stickor = [[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I],[I]]
-//const stickor = 21; 
+var stickor = [["I"], ["I"], ["I"], ["I"],["I"], ["I"],["I"],["I"],["I"],["I"], ["I"], ["I"],["I"], ["I"], ["I"], ["I"],["I"], ["I"], ["I"], ["I"]]
+//21 arrays i en array; 
 
-for (let i = 0; i < stickor.length; i++){
-console.log("this far");
-    console.log([i]);
+for (let i = 0; i <= stickor.length; i++){
+console.log([i]);
 }
 
