@@ -49,7 +49,13 @@ document.getElementById("btnChangePlayer").addEventListener("click", function(e)
   arrayScore.innerHTML = stickor.length;
   if(stickor.length <= 0){
   alert("The Winner is Player"+ index);
-  stickor.length = 21
+  alert("If you would like to play again please refresh browswer");
+  //stickor.length = 21
+  }
+//måste relodad för att köra igen
+
+  if(stickorArray <= 0){
+    stickorArray = stickor.length
   }
 });
 
