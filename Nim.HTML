@@ -26,18 +26,29 @@ table{
   margin: 15px;
   display: block;
  background-color:white;
+ 
 
 }
 
 .textbtn{
   margin:30px;
-  height:50px 
-  width:50px
+  height:50px;
+  width:50px;
+  background-color:white;
 }
+
+.hs{
+  
+  background-color:white;
+  }
+
+
     </style>
 </head>
 <body>
 <div class ="container">
+<div class="hs"><h1>Nim game</h1></div>
+
 <form class="raidobtn">
 <input type ="radio" name="lik" value = 1 id="One" checked="checked">1
 <input type ="radio" name="lik" value  = 2 id="Two" checked="">2
@@ -56,10 +67,9 @@ table{
 
 </table>
 
-<div class="textbtn">
-<input type="text" id ="score"><br>
+<div id ="arrayFunc"></div>
 
-</div>
+<div class="textbtn" id ="array"></div>
 <button type="button" id="btnChangePlayer">Dra!!</button>
 
 </div>
