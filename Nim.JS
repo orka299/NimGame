@@ -1,5 +1,7 @@
 //let sum = stickor.length;
 
+
+
 document.getElementById("btnChangePlayer").addEventListener("click", function(e) {
   
   let radio = document.getElementsByName("lik");
@@ -65,7 +67,7 @@ document.getElementById("btnChangePlayer").addEventListener("click", function(e)
 
 
 
-var stickor = ["I", "I", "I", "I","I", "I", "I", "I","I", "I", "I", "I","I", "I", "I", "I","I", "I", "I", "I","I"]
+var stickor = ["I", "I", "I", "I","I", "I", "I", "I","I", "I", "I", "I","I", "I", "I", "I","I", "I", "I", "I","I",]
 for (let i = 0; i <= stickor.length; i++){
 //console.log(stickor[i]);
 (stickor[i]);
