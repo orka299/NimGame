@@ -6,16 +6,16 @@ document.getElementById("btnChangePlayer").addEventListener("click", function(e)
   
   let radio = document.getElementsByName("lik");
   if(radio[0].checked){
-    alert(" - 1")
+    
     stickor.length = stickor.length - 1 
   }
   if(radio[1].checked){
     stickor.length = stickor.length - 2 
-    alert(" - 2")
+    
   }
   if(radio[2].checked){
     stickor.length = stickor.length - 3 
-    alert(" - 3")
+    
 
   }
   
@@ -49,7 +49,13 @@ document.getElementById("btnChangePlayer").addEventListener("click", function(e)
   arrayScore.innerHTML = stickor.length;
   if(stickor.length <= 0){
   alert("The Winner is Player"+ index);
-  alert("If you would like to play again please refresh browswer");
+  if (confirm("vill du spela igen")) {  
+   // function startAgain(){
+      location.reload();
+   // }
+} else {
+   
+}
   //stickor.length = 21
   }
 //måste relodad för att köra igen
