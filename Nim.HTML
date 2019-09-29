@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-    .container{
-        background-color: blue;
-        height: 500px;
-        width: 500px;
-        ;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: blue;
+      height: 500px;
+      width: 500px;
+      ;
 
-       display:inline-block;
+      display: inline-block;
     }
+
     .active {
-  background-color: yellow;
-}
-table{
-    background-color:white;
-    margin: 20px;
-    
-}
+      background-color: yellow;
+    }
 
-.raidobtn{
-  margin: 15px;
-  display: block;
- background-color:white;
- 
+    table {
+      background-color: white;
+      margin: 20px;
 
-}
+    }
 
-.textbtn{
-  margin:30px;
-  height:50px;
-  width:50px;
-  background-color:white;
-}
-
-.hs{
-  
-  background-color:white;
-  }
-#arrayFunc{
-  margin: 20px;
-}  
-.btnChange{
-  margin:20px;
-  height: 40px;
-  width: 75px;
-}
+    .raidobtn {
+      margin: 15px;
+      display: block;
+      background-color: white;
 
 
-    </style>
+    }
+
+    .textbtn {
+      margin: 30px;
+      height: 50px;
+      width: 50px;
+      background-color: white;
+    }
+
+    .hs {
+
+      background-color: white;
+    }
+
+    #arrayFunc {
+      margin: 20px;
+    }
+
+    .btnChange {
+      margin: 20px;
+      height: 40px;
+      width: 75px;
+    }
+  </style>
 </head>
+
 <body>
-<div class ="container">
-<div class="hs"><h1>Nim game</h1></div>
+  <div class="container">
+    <div class="hs">
+      <h1>Nim game</h1>
+    </div>
 
-<form class="raidobtn">
-<input type ="radio" name="lik" value = 1 id="One" checked="checked">1
-<input type ="radio" name="lik" value  = 2 id="Two" checked="">2
-<input type ="radio" name="lik" value = 3 id="Three"checked="">3
-</form>
-<hr>
-<table>
-        <colgroup>
-          <col class="player active" id="player1">
-          <col class="player" id="player2">
-        </colgroup>
-        <tr>
-          <th>Player 1</th>
-          <th>Player 2</th>
-        </tr> 
+    <form class="raidobtn">
+      <input type="radio" name="lik" value=1 id="One" checked="checked">1
+      <input type="radio" name="lik" value=2 id="Two" checked="">2
+      <input type="radio" name="lik" value=3 id="Three" checked="">3
+    </form>
+    <hr>
+    <table>
+      <colgroup>
+        <col class="player active" id="player1">
+        <col class="player" id="player2">
+      </colgroup>
+      <tr>
+        <th>Player 1</th>
+        <th>Player 2</th>
+      </tr>
 
-</table>
+    </table>
 
-<div id ="arrayFunc" class ="arrayFunc"></div>
+    <div id="arrayFunc" class="arrayFunc"></div>
 
-<div class="textbtn" id ="array"></div>
-<button type="button" id="btnChangePlayer" class ="btnChange">Dra!!</button><br>
+    <div class="textbtn" id="array"></div>
+    <button type="button" id="btnChangePlayer" class="btnChange">Dra!!</button><br>
 
- 
-</div>
-<input type="number" id="player_turn" value="1">
+
+  </div>
+  <input type="number" id="player_turn" value="1">
 
 
 </body>
 
 <script src="Nim.JS"></script>
+
 </html>
